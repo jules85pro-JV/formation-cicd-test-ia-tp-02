@@ -27,7 +27,7 @@ class UserTest {
     @Test
     @DisplayName("Seul l'ADMIN peut accéder à l'interface admin")
     void check_admin_access() {
-        assertThat(new User("a@b.com", "P123456!", Role.ADMIN).canAccessAdminArea()).isTrue();
-        assertThat(new User("a@b.com", "P123456!", Role.USER).canAccessAdminArea()).isFalse();
+        assertThat(new User("a@b.com", "P123a456!", Role.ADMIN).canAccessAdminArea()).isTrue();
+        assertThat(new User("a@b.com", "P123a456!", Role.USER).canAccessAdminArea()).isFalse();
     }
 }

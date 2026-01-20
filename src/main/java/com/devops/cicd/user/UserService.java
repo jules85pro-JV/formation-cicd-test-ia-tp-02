@@ -10,7 +10,7 @@ public class UserService {
      * - renvoie l'utilisateur créé
      * - propage les erreurs si les données sont invalides
      */
-    public User register(String email, String password, Role role) {
+    public User register(String email, String password, Role role) throws IllegalArgumentException {
         User user = new User(email, password, role);
         return user;
     }

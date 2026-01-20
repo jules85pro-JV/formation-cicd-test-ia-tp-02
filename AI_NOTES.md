@@ -127,4 +127,5 @@ oui
 # Analyse critique
     - tests conservés (il me semblait qu'il fallait théorisé les test puis les générer)
     - tests rejetés (aucun)
-    - décisions humaines (vérification de la production de l'ia)
+    - test modifié check_admin_access les mdp utilisé ne sont pas valide
+    - décisions humaines (vérification de la production de l'ia et modification des test ci dessus)
