@@ -2,7 +2,7 @@ package com.devops.cicd.user;
 
 import com.devops.cicd.PasswordPolicy;
 
-public class User {
+public final class User {
 
     private final String email;
     private final String password;

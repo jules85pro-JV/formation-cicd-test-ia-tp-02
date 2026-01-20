@@ -5,7 +5,7 @@ public final class EmailValidator {
     private EmailValidator() {}
 
     public static boolean isValid(String email) {
-        if (email == null) return false;
+        if (email == null){ return false; }
 
         // Règle 1 : Exactement un seul caractère '@'
         int firstAt = email.indexOf('@');
