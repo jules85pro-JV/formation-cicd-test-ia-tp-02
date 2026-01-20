@@ -98,7 +98,7 @@ class UserTest {
     class UserServiceTest {
         private final UserService service = new UserService();
 
-        @Test
+        @Test 
         void should_register_successfully() {
             User user = service.register("bob@test.com", "Secure123!", Role.ADMIN);
             assertThat(user).isNotNull();
